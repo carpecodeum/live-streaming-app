@@ -3,7 +3,7 @@ const CronJob = require('cron').CronJob,
     helpers = require('../helpers/helpers'),
     config = require('../config/default'),
     port = config.rtmp_server.http.port;
- 
+
 const job = new CronJob('*/5 * * * * *', function () {
     request
         .get('http://127.0.0.1:' + port + '/api/streams', function (error, response, body) {
@@ -17,5 +17,5 @@ const job = new CronJob('*/5 * * * * *', function () {
             }
         });
 }, null, true);
- 
+
 module.exports = job;

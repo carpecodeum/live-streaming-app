@@ -285,7 +285,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: '/',
         className: 'navbar-brand'
-      }, "NodeStream"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "SYNME"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "navbar-toggler",
         type: "button",
         "data-toggle": "collapse",
@@ -306,12 +306,6 @@ function (_React$Component) {
         className: 'nav-link',
         to: '/settings'
       }, "Go Live")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "nav-item float-right"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "nav-link",
-        target: "_blank",
-        href: "https://github.com/waleedahmad"
-      }, "Github")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "nav-item float-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "nav-link",

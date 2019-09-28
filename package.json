@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "./node_modules/.bin/webpack --watch",
-    "start": "./node_modules/.bin/supervisor -w server ./server/index.js"
+    "start": "./node_modules/.bin/supervisor -w server ./server/app.js"
   },
   "author": "",
   "license": "ISC",

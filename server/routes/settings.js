@@ -1,6 +1,6 @@
 const express = require('express'),
     router = express.Router(),
-    User = require('../database/UserSchema').User,
+    User = require('../database/Schema').User,
     shortid = require('shortid');
 
 router.get('/stream_key',
@@ -37,3 +37,4 @@ router.post('/stream_key',
 
 
 module.exports = router;
+
