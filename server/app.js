@@ -38,7 +38,6 @@ app.use(Session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Register app routes
 app.use('/login', require('./routes/login'));
 app.use('/register', require('./routes/register'));
 app.use('/settings', require('./routes/settings'));
