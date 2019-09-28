@@ -1,7 +1,7 @@
 const express = require('express'),
     router = express.Router(),
-    User = require('../database/UserSchema');
- 
+    User = require('../database/Schema').User;
+
 router.get('/info',
     require('connect-ensure-login').ensureLoggedIn(),
     (req, res) => {
@@ -12,7 +12,7 @@ router.get('/info',
                 if (!streams.hasOwnProperty(stream)) continue;
                 query.$or.push({stream_key : stream});
             }
- 
+
             User.find(query,(err, users) => {
                 if (err)
                     return;
@@ -22,5 +22,5 @@ router.get('/info',
             });
         }
     });
- 
 module.exports = router;
+

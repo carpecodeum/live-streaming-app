@@ -1,7 +1,7 @@
 const spawn = require('child_process').spawn,
     config = require('../config/default'),
     cmd = config.rtmp_server.trans.ffmpeg;
- 
+
 const generateStreamThumbnail = (stream_key) => {
     const args = [
         '-y',
@@ -11,13 +11,14 @@ const generateStreamThumbnail = (stream_key) => {
         '-vf', 'scale=-2:300',
         'server/thumbnails/'+stream_key+'.png',
     ];
- 
+
     spawn(cmd, args, {
         detached: true,
         stdio: 'ignore'
     }).unref();
 };
- 
+
 module.exports = {
     generateStreamThumbnail : generateStreamThumbnail
 };
+

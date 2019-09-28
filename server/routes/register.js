@@ -1,11 +1,11 @@
 const express = require('express'),
     router = express.Router(),
     passport = require('passport');
- 
+
 router.get('/',
     require('connect-ensure-login').ensureLoggedOut(),
     (req, res) => {
-        res.render('../views/register', {
+        res.render('register', {
             user : null,
             errors : {
                 username : req.flash('username'),
@@ -13,7 +13,7 @@ router.get('/',
             }
         });
     });
- 
+
 router.post('/',
     require('connect-ensure-login').ensureLoggedOut(),
     passport.authenticate('localRegister', {
@@ -22,6 +22,7 @@ router.post('/',
         failureFlash : true
     })
 );
- 
- 
+
+
 module.exports = router;
+
