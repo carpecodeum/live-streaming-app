@@ -29,8 +29,8 @@ app.use(Session({
 app.use(flash());
 app.use('/login', require('./router/login'));
 app.use('/register', require('./router/register'));
-app.use('/streams', require('./routes/streams'));
-app.use('/settings', require('./routes/settings'));
+app.use('/streams', require('./router/streams'));
+app.use('/settings', require('./router/settings'));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(require('cookie-parser')());

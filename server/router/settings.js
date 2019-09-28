@@ -1,6 +1,6 @@
 const express = require('express'),
     router = express.Router(),
-    User = require('../database/Schema').User,
+    User = require('../database/UserSchema').User,
     shortid = require('shortid');
 
 router.get('/stream_key',

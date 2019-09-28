@@ -1,4 +1,4 @@
-const User = require('./database/Schema').User;
+const User = require('./database/UserSchema');
 const helpers = require('./helpers/helpers');
 
 const NodeMediaServer = require('node-media-server'),
